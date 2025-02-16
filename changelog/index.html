@@ -410,6 +410,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#020-2025-02-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      [0.2.0] - 2025-02-16
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.2.0] - 2025-02-16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#010-2024-12-13" class="md-nav__link">
     <span class="md-ellipsis">
       [0.1.0] - 2024-12-13
@@ -420,7 +462,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added" class="md-nav__link">
+  <a href="#added_1" class="md-nav__link">
     <span class="md-ellipsis">
       Added
     </span>
@@ -769,6 +811,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#020-2025-02-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      [0.2.0] - 2025-02-16
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[0.2.0] - 2025-02-16">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#010-2024-12-13" class="md-nav__link">
     <span class="md-ellipsis">
       [0.1.0] - 2024-12-13
@@ -779,7 +863,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#added" class="md-nav__link">
+  <a href="#added_1" class="md-nav__link">
     <span class="md-ellipsis">
       Added
     </span>
@@ -812,8 +896,35 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
-<h2 id="010-2024-12-13">[0.1.0] - 2024-12-13</h2>
+<h2 id="020-2025-02-16">[0.2.0] - 2025-02-16</h2>
 <h3 id="added">Added</h3>
+<ul>
+<li>Module <code class="language-python highlight"><span class="n">pbipinspect</span><span class="o">.</span><span class="n">parse</span></code> to parse Power BI models, including TMSL and TMDL</li>
+<li>Several functions to <code class="language-python highlight"><span class="n">pbipinspect</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">utils</span></code> to parse TMSL and TMDL</li>
+<li>Module <code class="language-python highlight"><span class="n">pbipinspect</span><span class="o">.</span><span class="n">report</span></code> with templates for report generation</li>
+<li>Expressions (parameters and functions) added to model in <code class="language-python highlight"><span class="n">PbipInspect</span></code>. A new method <code class="language-python highlight"><span class="n">parse_tmdl_expressions</span></code> was added due to this</li>
+<li>Method <code class="language-python highlight"><span class="n">add_metadata</span></code> to the <code class="language-python highlight"><span class="n">PbipInspect</span></code> class to add metadata to the report. Metadata is used in default report template to provide overview section</li>
+<li>Method <code class="language-python highlight"><span class="n">parse_relationships_to_mermaid</span></code> to the <code class="language-python highlight"><span class="n">PbipInspect</span></code> class to parse relationships to mermaid format. The output is used in default report template</li>
+<li>Method <code class="language-python highlight"><span class="n">build_report</span></code> to the <code class="language-python highlight"><span class="n">PbipInspect</span></code> class to build a markdown report. This function also gives the possibility to use a custom template and render function</li>
+<li>New utilies functions <code class="language-python highlight"><span class="n">sanitize_id</span></code> and <code class="language-python highlight"><span class="n">fix_duplicate_ids</span></code> to <code class="language-python highlight"><span class="n">pbipinspect</span><span class="o">.</span><span class="n">utils</span></code>. These functions are used to create valid ids and fix duplicate ids in the report</li>
+<li>Property <code class="language-python highlight"><span class="n">expressions</span></code> to the <code class="language-python highlight"><span class="n">Pbip</span></code> class</li>
+<li>Method <code class="language-python highlight"><span class="n">get_fields</span></code> to the <code class="language-python highlight"><span class="n">Pbip</span></code> class to retrieve fields from tables based on the specified key</li>
+<li><code class="language-python highlight"><span class="n">expect_no_calculated_tables</span></code> expectation</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Property <code class="language-python highlight"><span class="n">model</span></code> in <code class="language-python highlight"><span class="n">PbipInspect</span></code> renamed to <code class="language-python highlight"><span class="n">pbip</span></code></li>
+<li>TMDL parser now uses a different approach to avoid errors arising from conflicting names</li>
+<li>Method <code class="language-python highlight"><span class="n">parse_tmdl</span></code> in <code class="language-python highlight"><span class="n">PbipInspect</span></code> changed to support expressions</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>TMDL and TMLS parses in <code class="language-python highlight"><span class="n">PbipInspect</span></code> now uses utf-8 encoding</li>
+<li>TMLD parser now checks if relationship file exists</li>
+<li>Variables name in measures source code now appear correctly</li>
+</ul>
+<h2 id="010-2024-12-13">[0.1.0] - 2024-12-13</h2>
+<h3 id="added_1">Added</h3>
 <ul>
 <li>Expectations to validate Power BI project</li>
 <li>tmsl and tmdl parser</li>
